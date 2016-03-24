@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="BingMapsClusteringExample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BingMapsClusteringExample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:m="using:Bing.Maps"
+    mc:Ignorable="d">
+   
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <m:Map x:Name="MyMap" Credentials="YOUR_BING_MAPS_KEY"/>
+
+        <Border Width="260" Height="270" CornerRadius="15" Background="White" Margin="20"
+                VerticalAlignment="Center" HorizontalAlignment="Right">
+            <StackPanel Margin="10">
+                <TextBlock Text="Mock Data Size:" FontSize="18"/>
+                <TextBox Name="EntitySize" Text="5000"/>
+                <Button Name="GenerateBtn" Content="Generate Mock Data" 
+                        Click="GenerateData_Clicked" Margin="0,10"/>
+                <Button Name="ViewAllBtn" Content="View all locations" 
+                        IsEnabled="False"  Click="ViewAllData_Clicked"/>
+                <Button Name="PointBtn" Content="Use Point Based Clustering" 
+                        IsEnabled="False" Margin="0,10" Click="PointClusterData_Clicked"/>
+                <Button Name="GridBtn" Content="Use Grid Based Clustering" 
+                        IsEnabled="False" Click="GridClusterData_Clicked"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>
