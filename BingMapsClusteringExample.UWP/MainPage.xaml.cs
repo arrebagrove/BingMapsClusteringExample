@@ -1,5 +1,4 @@
-﻿using Bing.Maps;
-using BingMapsClusteringEngine;
+﻿using BingMapsClusteringEngine;
 using System;
 using Windows.UI;
 using Windows.UI.Popups;

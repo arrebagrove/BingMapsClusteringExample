@@ -6,11 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:m="using:Bing.Maps"
+    xmlns:maps="using:Windows.UI.Xaml.Controls.Maps"
     mc:Ignorable="d">
    
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-        <m:Map x:Name="MyMap" Credentials="YOUR_BING_MAPS_KEY"/>
-
+        <maps:MapControl x:Name="MyMap" />
+        
         <Border Width="260" Height="270" CornerRadius="15" Background="White" Margin="20"
                 VerticalAlignment="Center" HorizontalAlignment="Right">
             <StackPanel Margin="10">
